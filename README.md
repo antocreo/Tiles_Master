@@ -51,13 +51,13 @@
  
  Keybord Commands
  ----------
- 1,2,3,4,5   - type of tile
- q,w,e       - type of random pattern  
- spacebar    - bang random pattern
- backspace   - bang reset
- i           - toggle random indent
- r           - random panic!
- mouse click - rotate tile 90 degrees
+ 1,2,3,4,5   - type of tile /
+ q,w,e       - type of random pattern /
+ spacebar    - bang random pattern /
+ backspace   - bang reset /
+ i           - toggle random indent /
+ r           - random panic! /
+ mouse click - rotate tile 90 degrees /
  mouse drag  - continuos rotation 90 degrees
  
  */
