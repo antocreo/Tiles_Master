@@ -29,7 +29,7 @@ void randomChoice() {
 
           myTile[r][c].angle+=90;
         }
-        
+
 
         //COUNTING THE ROWS and choising each tile according the reminder
         if (r%randomello!=0) {
@@ -66,6 +66,8 @@ void randomChoice() {
           myTile[r][c].angle+=90;
         }
       }
+
+     
     }
   }
 }

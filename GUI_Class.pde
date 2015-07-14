@@ -108,12 +108,12 @@ public class ControlFrame extends PApplet {
 
     text("Keybord Commands------------------------------", 10, 80);
     //    fill(0);
-    text("1,2,3,4,5   - type of tile", 10, 100);
-    text("q,w,e       - type of random pattern", 10, 120);
-    text("SPACEBAR    - bang random pattern", 10, 140);
-    text("BACKSPACE   - bang reset", 10, 160);
-    text("i           - toggle random indent", 10, 180);
-    text("s           - save screenshot", 10, 200);
+    text("1,2,3,4,5,6 - type of tile", 10, 100);
+    text("q,w,e,r - type of random pattern - r activates sandpile", 10, 120);
+    text("SPACEBAR - bang random pattern", 10, 140);
+    text("BACKSPACE - bang reset", 10, 160);
+    text("i - toggle random indent", 10, 180);
+    text("s - save screenshot", 10, 200);
 
     text("MOUSE CLICK - rotate tile 90 degrees", 10, 220);
     text("MOUSE DRAG  - continuos rotation 90 degrees", 10, 240);

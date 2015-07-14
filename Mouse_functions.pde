@@ -19,10 +19,19 @@ void mouseReleased() {
         
         myTile[r][c].angle+=90;
         
+//        if (myTile[r][c].angle>90*4) {
+//          myTile[r+1][c].angle+=90;  
+//          myTile[r][c+1].angle+=90;
+//          myTile[r-1][c].angle+=90;
+//          myTile[r][c-1].angle+=90;
+//        }
+        
         //        randomChoice();        // random choice now integrated with the spacebar
         //calculating and printing the tile index
         int index = c*row+r+1;
         println("Tile num " + index);
+        println(myTile[r][c].angle);
+
         tileChanged=true;
       }
     }

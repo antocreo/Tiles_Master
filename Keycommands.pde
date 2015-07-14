@@ -37,6 +37,8 @@ void keyPressed() {
     tile3=false;
     tile4=false;
     tile5=false;
+    tile6=false;
+    tile7=false;
   }
 
   if (key == '2' ) {
@@ -45,6 +47,8 @@ void keyPressed() {
     tile3=false;
     tile4=false;
     tile5=false;
+    tile6=false;
+    tile7=false;
   }
   if (key == '3' ) {
     tile1=false;
@@ -52,6 +56,8 @@ void keyPressed() {
     tile3=true;
     tile4=false;
     tile5=false;
+    tile6=false;
+    tile7=false;
   }
   if (key == '4' ) {
     tile1=false;
@@ -59,6 +65,8 @@ void keyPressed() {
     tile3=false;
     tile4=true;
     tile5=false;
+    tile6=false;
+    tile7=false;
   }
 
   if (key == '5' ) {
@@ -67,6 +75,28 @@ void keyPressed() {
     tile3=false;
     tile4=false;
     tile5=true;
+    tile6=false;
+    tile7=false;
+  }
+
+  if (key == '6' ) {
+    tile1=false;
+    tile2=false;
+    tile3=false;
+    tile4=false;
+    tile5=false;
+    tile6=true;
+    tile7=false;
+  }
+
+  if (key == '7' ) {
+    tile1=false;
+    tile2=false;
+    tile3=false;
+    tile4=false;
+    tile5=false;
+    tile6=false;
+    tile7=true;
   }
 
   //triggering random patterns
@@ -75,18 +105,26 @@ void keyPressed() {
     pat1=true;
     pat2=false;
     pat3=false;
+    sandpile = false;
   }
-  
-   if (key == 'w' ) {
+
+  if (key == 'w' ) {
     pat1=false;
     pat2=true;
     pat3=false;
+    sandpile = false;
   }
 
- if (key == 'e' ) {
+  if (key == 'e' ) {
     pat1=false;
     pat2=false;
     pat3=true;
+    sandpile = false;
+  }
+
+  if (key == 'r' ) {
+
+    sandpile = !sandpile;
   }
 
 

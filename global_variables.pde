@@ -15,9 +15,9 @@ Bang randomPattern;
 Bang screenShot;
 ///// end GUI///
 
-int row = 20;
-int col = 10;
-int cellSize=50;
+int row = 100;
+int col = 40;
+int cellSize=15;
 int indent = 0;
 int angle=0;
 int counter=0;
@@ -37,8 +37,8 @@ int min = minute();  // Values from 0 - 59
 int h = hour();    // Values from 0 - 23
 //end save image vars//
 
-boolean value, tile1, tile2, tile3, tile4, tile5;
-boolean pat1,pat2,pat3;
+boolean value, tile1, tile2, tile3, tile4, tile5, tile6,tile7;
+boolean pat1,pat2,pat3,sandpile;
 boolean hasIndent,indentRandom;
 boolean tileChanged=false;
 

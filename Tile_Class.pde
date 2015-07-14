@@ -5,6 +5,7 @@ class Tile {
   int ind;
   int x;
   int y;
+  boolean odd, even;
 
 
   Tile(  int theta ) {
@@ -12,6 +13,9 @@ class Tile {
   }
 
   void draw(int xPos, int yPos, int size, int indent) {
+
+
+
     noStroke();
     tileSize = size;
     ind = indent;
@@ -77,9 +81,9 @@ class Tile {
       rect(0, 0, tileSize-ind, tileSize/4-ind);
       popMatrix();
     }
-    
-    
-    
+
+
+
     if (tile5) {
       //inner square
       pushMatrix();
@@ -94,8 +98,50 @@ class Tile {
 
       popMatrix();
     }
-    
- 
+
+    if (tile6) {
+      //inner square
+      pushMatrix();
+      translate(x, y);
+      rotate(radians(angle));
+      fill(bgColor );
+      rect(0, 0, tileSize-ind, tileSize-ind); //bg
+      fill(angle, angle, angle);
+      ellipse(0, 0, tileSize-ind, tileSize-ind);
+      fill(angle/2, angle/2, angle/2);
+      ellipse(0, 0, tileSize-10-ind, tileSize-10-ind);
+
+      popMatrix();
+    }
+
+
+    if (tile7) {
+      int dotRad = tileSize/4-ind;
+      if (even) {
+        pushMatrix();
+        translate(x, y);
+        rotate(radians(angle));
+        fill(255);
+        rect(0, 0, tileSize, tileSize);
+        fill(0);
+        ellipse(tileSize/2-dotRad, -(tileSize/2-dotRad), dotRad, dotRad);
+        ellipse(- (tileSize/2-dotRad), (tileSize/2-dotRad), dotRad, dotRad);
+        popMatrix();
+      }
+
+      if (odd) {
+        pushMatrix();
+        translate(x, y);
+        rotate(radians(angle));
+        fill(0);
+        rect(0, 0, tileSize, tileSize);
+        fill(255);
+        ellipse(tileSize/2-dotRad, -(tileSize/2-dotRad), dotRad, dotRad);
+        ellipse(- (tileSize/2-dotRad), (tileSize/2-dotRad), dotRad, dotRad);
+        popMatrix();
+      }
+    }
+
 
     //
 
@@ -116,6 +162,46 @@ void drawTiles() {
     for (int c=0; c<col; c++) {
       // this will draw the tiles on the stage
       myTile[r][c].draw(r*cellSize, c*cellSize, cellSize, indent);
+
+      //sandpile
+      if (myTile[r][c].angle%(90*4)==0 && sandpile) {
+
+        if (tile6) {
+
+          //            indent = round(sin(myTile[r][c].angle))*cellSize/4;
+        }
+
+        if (
+        //limiting the mouse position to each tile
+        r+1<row && c+1 <col && r-1>=0 && c-1 >=0) {
+          myTile[r][c].angle=90;  
+
+          myTile[r+1][c].angle+=90;  
+          myTile[r][c+1].angle+=90;
+          myTile[r-1][c].angle+=90;
+          myTile[r][c-1].angle+=90;
+        }
+      } else {
+
+        myTile[r][c].angle-=90;  
+        myTile[r][c].angle-=90;
+        myTile[r][c].angle-=90;
+        myTile[r][c].angle-=90;
+      }
+
+      //illusion
+      if (tile7) {
+
+        if ((r+c)%2==0) {
+
+          myTile[r][c].even =true;
+          myTile[r][c].draw(r*cellSize, c*cellSize, cellSize, indent);
+        } else {
+          myTile[r][c].odd =true;
+          myTile[r][c].draw(r*cellSize, c*cellSize, cellSize, indent);
+        }
+      }
     }
   }
 }
+
