@@ -60,13 +60,13 @@ http://www.letitbrain.it/LIB_interactive/?page_id=347
  
  Keybord Commands
  ----------
- 1,2,3,4,5,6,7   - type of tile /
- q,w,e       - type of random pattern /
- spacebar    - bang random pattern /
- backspace   - bang reset /
- i           - toggle random indent /
- r           - activates sandpile / random panic! /
- mouse click - rotate tile 90 degrees /
- mouse drag  - continuos rotation 90 degrees
+ 1,2,3,4,5,6,7   - type of tile</br>
+ q,w,e       - type of random pattern</br>
+ spacebar    - bang random pattern</br>
+ backspace   - bang reset</br>
+ i           - toggle random indent</br>
+ r           - activates sandpile / random panic!</br>
+ mouse click - rotate tile 90 degrees</br>
+ mouse drag  - continuos rotation 90 degrees</br>
  
  */
