@@ -13,9 +13,7 @@ http://www.letitbrain.it/LIB_interactive/?page_id=347
 //EXPLORING CLASSES AND GRIDS. RANDOM PATTERNS AND TILING SYSTEMS.
 //End of term assignment: Programming for Artists ::: MFA Computational arts 2014
 
-////////////////////////////////////////////////////////////////////////
-/*
- Aim
+### Aim
  ---
  The aim is using Processing to create a software that simulates the by Pablo Valbuena installation.
  The original project consists in creating a series of complex patterns by rotating each of the single module
@@ -23,7 +21,7 @@ http://www.letitbrain.it/LIB_interactive/?page_id=347
  
  The original project is visible here https://www.youtube.com/watch?v=OaVjXL9liX4
  
- Process
+### Process
  -------
  To recreate the system I decided to use 2 main classes: Stage class that creates the floor and Tile class that
  stores the properties of each tile.
@@ -41,7 +39,7 @@ http://www.letitbrain.it/LIB_interactive/?page_id=347
  I created a tab for each section of the project so that could be easy for the reader ond for myslef to go around the code.
  
  
- Comments
+### Comments
  --------
  The program is working well and as expected.
  I managed to implement it with extra functions and extra patterns.
@@ -53,12 +51,12 @@ http://www.letitbrain.it/LIB_interactive/?page_id=347
  Overall I think I can be happy with this project as I acheived the pre-fixed results and overcame many issues
  regarding the behaviour of the tiles.
  
- Evaluation
+### Evaluation
  ----------
  Bugs: None. 
  Extensions:None
  
- Keybord Commands
+### Keybord Commands
  ----------
  1,2,3,4,5,6,7   - type of tile</br>
  q,w,e       - type of random pattern</br>
@@ -69,4 +67,4 @@ http://www.letitbrain.it/LIB_interactive/?page_id=347
  mouse click - rotate tile 90 degrees</br>
  mouse drag  - continuos rotation 90 degrees</br>
  
- */
+
